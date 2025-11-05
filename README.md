@@ -56,3 +56,10 @@ Visual Studio Code Filer
     - JavaScript -> Script.js
     - JSON -> Highscore.json
     - Backend -> Backend/app.py
+
+Koder till filerna
+- HTML Filen är det skriptet som bygger up struktur (Innehåll och Layout)
+- CSS Filen är det skriptet som bygger up och styr utseende (Färger osv)
+- JavaScript är det skriptet som bygger up och lägger till funktioner (Menyer eller annat)
+- JSON är det skriptet som bygger up och lagrar/överför data (Server och Webbsida)
+
