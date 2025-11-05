@@ -109,3 +109,18 @@ function stanna(playerIdx) {
       highscoreList.appendChild(li);
     });
   }
+
+  async function saveHighscore(name) {
+    const data = JSON.parse(localStorage.getItem('chickengameHighscores')) || [];
+    const existing = data.find(p => p.name === name);
+    if (existing) {
+      existing.wins += 1;
+    } else {
+      data.push({ name, wins: 1 });
+    }
+    localStorage.setItem('chickengameHighscores', JSON.stringify(data));
+    return Promise.resolve();
+  }
+
+  // Starta spelet
+  init();
