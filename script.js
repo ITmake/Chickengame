@@ -37,3 +37,20 @@ let state = {
 
     render();
   }
+
+function stanna(playerIdx) {
+    if (state.finished || state.active !== playerIdx) return;
+
+    state.totals[playerIdx] += state.rounds[playerIdx];
+    state.rounds[playerIdx] = 0;
+
+    const målpoäng = parseInt(targetInput.value) || 100;
+    if (state.totals[playerIdx] >= målpoäng) {
+      state.finished = true;
+      announceWinner(playerIdx, `🎉 ${getPlayerName(playerIdx)} har vunnit!`);
+    } else {
+      växlaSpelare();
+    }
+
+    render();
+  }
