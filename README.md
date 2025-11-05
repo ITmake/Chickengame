@@ -24,3 +24,12 @@ Debian 12 installation
 - Installera basystem och skrivbordsmiljö (t.ex. GNOME).
 - Bekräfta att GRUB installeras till huvuddisken.
 - Ta ut USB-minnet och starta systemet – Debian 12 är nu installerat.
+
+Visual Studio Code Installation
+- ladda VSCode Filen från nätet.
+- öppna terminalen och skriv "apt install ./code_1.105.1-1760482543_amd64.deb"
+- sudo apt install.
+- sudo apt update.
+- VSCode är nu installerat.
+
+
