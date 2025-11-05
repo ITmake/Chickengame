@@ -82,3 +82,11 @@ function stanna(playerIdx) {
   function getPlayerName(i) {
     return `Spelare ${i + 1}`;
   }
+
+  function announceWinner(playerIdx, message) {
+    render();
+    const name = prompt(`${message}\nAnge vinnarnamn:`, getPlayerName(playerIdx)) || getPlayerName(playerIdx);
+    saveHighscore(name).then(() => {
+      loadHighscores();
+    });
+  }
